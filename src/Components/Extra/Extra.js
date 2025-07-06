@@ -40,7 +40,7 @@ function Extra() {
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={8500} end={9000} duration={4} />
+                <CountUp start={8000} end={9000} duration={4000} />
                 <span>+</span>
               </span>
 
