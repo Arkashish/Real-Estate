@@ -1,6 +1,6 @@
 .h-wrapper {
-  background-color: black;
-  /* color: white; */
+  /* background-color: black; */
+  color: white;
   z-index: 99;
 }
 
@@ -12,7 +12,6 @@
 }
 .h-menu {
   gap: 2rem;
-  display: flex;
 }
 
 .h-menu > *:hover {
