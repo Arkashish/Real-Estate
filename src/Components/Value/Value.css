@@ -1,0 +1,102 @@
+.v-container > div {
+  flex: 1;
+}
+
+.v-right {
+  gap: 0.5rem;
+}
+
+.accordion {
+  margin-top: 2rem;
+  border: none;
+  width: 100%;
+}
+
+.accordionItem {
+  background: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.accordionButton {
+  background: white;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.accordionButton:hover {
+  background-color: #f0f8ff;
+}
+
+.icon {
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  fill: blue;
+}
+
+.accordionButton .primaryText {
+  font-size: 1.4rem;
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.accordionPanel {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .v-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordionButton .primaryText {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+
+  .icon {
+    padding: 6px;
+  }
+}
